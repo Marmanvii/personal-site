@@ -1,0 +1,21 @@
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.body .content {
+    font-size: 128px;
+    user-select: none;
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+@media (max-width: 768px) {
+    .body .content {
+        font-size: 48px;
+    }
+}
